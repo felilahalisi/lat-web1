@@ -1,0 +1,636 @@
+*{
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #A87676;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 5px 0;
+}
+nav ul{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 25px;
+}
+nav a {
+    color: white;
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+}
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: white;
+    transition: width 0.4s ease, right 0.4s ease;
+}
+nav a:hover::after {
+    width: 100%;
+    right: 0;
+    left: 0;
+}
+section #home{
+    background-color: white;
+    padding: 50px 150px;
+}
+section #home .name-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 75px 0;
+    gap: 200px;
+}
+section #home .name-img .name .name1{
+    font-size: 24px;
+}
+section #home .name-img .name .name2{
+    font-size: 40px;
+}
+section #home .name-img img{
+    width: 300px;
+    border-radius: 50%;
+}
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+h2 {
+    font-weight: 500;
+    font-size: 32px;
+    color: black;
+    width: 100%;
+}
+p{
+    margin-bottom: 30px;
+}
+a.tbl-about {
+    background: #1A3636;
+    border-radius: 20px;
+    padding: 15px 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+a.tbl-about:hover {
+    color: black;
+    background: #F6F5F5;
+}
+a.tbl-contact {
+    background: #1B3C73;
+    border-radius: 20px;
+    padding: 15px 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+a.tbl-contact:hover {
+    color: black;
+    background: #FFCAD4;
+}
+section #about .menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C65BCF;
+    border-radius: 10px;
+}
+section #about .menu img{
+    width: 500px;
+}
+section #contact .contact-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF8E8F;
+    border-radius: 10px;
+}
+section #contact .contact-menu img{
+    width: 500px;
+}
+section #about{
+    background-color: white;
+    padding: 50px 150px;
+}
+section #about .title{
+    text-align: center;
+    font-size: 24px;
+}
+section #about .intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    gap: 25px;
+    background-color: #A87676;
+    border-radius: 10px;
+}
+section #about .intro img{
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+}
+section #about .intro p{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+}
+section #about .list-hobby{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 250px);
+    gap: 18px;
+    padding: 20px;
+}
+section #about .list-hobby .hobby-1{
+    background-image: url("../image/Dancing.jfif");
+    background-size: cover;
+    background-position: center;
+}
+section #about .list-hobby .hobby-2{
+    background-image: url("../image/Make\ Over.jfif");
+    background-size: cover;
+    background-position: center;
+}
+section #about .list-hobby .hobby-3{
+    background-image: url("../image/Cooking.jfif");
+    background-size: cover;
+    background-position: center;
+}
+section #about .list-hobby .hobby-4{
+    background-image: url("../image/Traveling.jfif");
+    background-size: cover;
+    background-position: center;
+}
+section #about .list-hobby [class*="hobby-"]{
+    border-radius: 10px;
+    padding: 10px;
+}
+section #about .list-hobby [class*="hobby-"] .part-hobby{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(1px);
+}
+section #about .list-hobby [class*="hobby-"] .part-hobby img{
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+}
+section #about .list-hobby [class*="hobby-"] .part-hobby .text{
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+}
+section #contact{
+    background-color: white;
+    padding: 50px 150px;
+}
+section #contact .contact{
+    background-color: #A87676;
+    border-radius: 10px;
+    padding: 50px;
+}
+section #contact .contact h3{
+    text-align: center;
+    font-size: 36px;
+    color: white;
+}
+section #contact .contact .img-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 350px;
+}
+section #contact .contact .img-contact .list-contact ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+section #contact .contact .img-contact .list-contact ul li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+section #contact .contact .img-contact .list-contact ul li img{
+    width: 32px;
+}
+section #contact .contact .img-contact .image img{
+    display: flex;
+    align-items: center;
+    height: 350px;
+    border-radius: 10px;
+}
+footer ul{
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+footer img{
+    width: 30px;
+}
+footer p{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+}
+
+@media screen and (max-width: 1200px) {
+    nav ul{
+        gap: 30px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    section #home{
+        padding: 50px 150px;
+    }
+    section #home .name-img{
+        gap: 200px;
+    }
+    section #home .name-img .name .name1{
+        font-size: 24px;
+    }
+    section #home .name-img .name .name2{
+        font-size: 40px;
+    }
+    section #home .name-img img{
+        width: 300px;
+        border-radius: 50%;
+    }
+    .kolom{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    p{
+        margin-bottom: 30px;
+    }
+    a.tbl-about{
+        padding: 15px 20px;
+    }
+    a.tbl-contact{
+        padding: 15px 20px;
+    }
+    section #about .menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #C65BCF;
+        border-radius: 10px;
+    }
+    section #about .menu img{
+        width: 500px;
+    }
+    section #contact .contact-menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #FF8E8F;
+        border-radius: 10px;
+    }
+    section #contact .contact-menu img{
+        width: 500px;
+    }
+    section #about{
+        padding: 50px 150px;
+    }
+    section #about .title{
+        font-size: 24px;
+    }
+    section #about .intro{
+        padding: 15px;
+        gap: 25px;
+    }
+    section #about .intro img{
+        width: 400px;
+        height: 300px;
+    }
+    section #about .intro p{
+        font-size: 20px;
+    }
+    section #about .list-hobby{
+        grid-template-columns: repeat(4,250px);
+        gap: 18px;
+        padding: 20px;
+    }
+    section #about .list-hobby [class*="hobby-"]{
+        padding: 10px;
+    }
+    section #about .list-hobby [class*="hobby-"] .part-hobby img{
+        width: 150px;
+        height: 200px;
+    }
+    section #about .list-hobby [class*="hobby-"] .part-hobby .text{
+        font-size: 16px;
+    }
+    section #contact{
+        padding: 50px 150px;
+    }
+    section #contact .contact{
+        padding: 50px;
+    }
+    section #contact .contact h3{
+        font-size: 36px;
+    }
+    section #contact .contact .img-contact{
+        gap: 350px;
+    }
+    section #contact .contact .img-contact .list-contact ul li{
+        gap: 10px;
+    }
+    section #contact .contact .img-contact .list-contact ul li img{
+        width: 32px;
+    }
+    section #contact .contact .img-contact .image img{
+        height: 350px;
+    }
+    footer ul{
+        gap: 10px;
+    }
+    footer img{
+        width: 30px;
+    }
+    footer p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul{
+        gap: 25px;
+    }
+    nav a{
+        font-size: 18px;
+    }
+    section #home{
+        padding: 50px 150px;
+    }
+    section #home .name-img{
+        flex-direction: column-reverse;
+        gap: 150px;
+    }
+    section #home .name-img .name .name1{
+        font-size: 24px;
+    }
+    section #home .name-img .name .name2{
+        font-size: 40px;
+    }
+    section #home .name-img img{
+        width: 300px;
+        border-radius: 50%;
+    }
+    .kolom{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    p{
+        margin-bottom: 30px;
+    }
+    a.tbl-about{
+        padding: 15px 20px;
+    }
+    a.tbl-contact{
+        padding: 15px 20px;
+    }
+    section #about .menu{
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+    }
+    section #about .menu img{
+        width: 300px;
+    }
+    section #contact .contact-menu{
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+    }
+    section #contact .contact-menu img{
+        width: 300px;
+    }
+    section #about{
+        padding: 50px 150px;
+    }
+    section #about .title{
+        font-size: 24px;
+    }
+    section #about .intro{
+        flex-direction: column;
+        padding: 15px;
+        gap: 25px;
+    }
+    section #about .intro img{
+        width: 400px;
+        height: 300px;
+    }
+    section #about .intro p{
+        font-size: 20px;
+    }
+    section #about .list-hobby{
+        grid-template-columns: repeat(2,250px);
+        gap: 18px;
+        padding: 20px;
+    }
+    section #about .list-hobby [class*="hobby-"]{
+        padding: 10px;
+    }
+    section #about .list-hobby [class*="hobby-"] .part-hobby img{
+        width: 150px;
+        height: 200px;
+    }
+    section #about .list-hobby [class*="hobby-"] .part-hobby .text{
+        font-size: 16px;
+    }
+    section #contact{
+        padding: 50px 150px;
+    }
+    section #contact .contact{
+        padding: 20px;
+    }
+    section #contact .contact h3{
+        font-size: 30px;
+    }
+    section #contact .contact .img-contact{
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    section #contact .contact .img-contact .list-contact ul li{
+        gap: 10px;
+    }
+    section #contact .contact .img-contact .list-contact ul li img{
+        width: 30px;
+    }
+    section #contact .contact .img-contact .image img{
+        height: 300px;
+    }
+    footer ul{
+        gap: 10px;
+    }
+    footer img{
+        width: 30px;
+    }
+    footer p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    nav ul{
+        gap: 15px;
+    }
+    nav a{
+        font-size: 14px;
+    }
+    section #home{
+        padding: 25px 50px;
+    }
+    section #home .name-img{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 50px;
+    }
+    section #home .name-img .name .name1{
+        font-size: 20px;
+    }
+    section #home .name-img .name .name2{
+        font-size: 36px;
+    }
+    section #home .name-img img{
+        width: 250px;
+        border-radius: 50%;
+    }
+    .kolom{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    h2{
+        font-size: 28px;
+    }
+    p{
+        margin-bottom: 30px;
+    }
+    a.tbl-about{
+        padding: 15px 20px;
+    }
+    a.tbl-contact{
+        padding: 15px 20px;
+    }
+    section #about .menu{
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+    section #about .menu img{
+        width: 250px;
+    }
+    section #contact .contact-menu{
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+    section #contact .contact-menu img{
+        width: 250px;
+    }
+    section #about{
+        padding: 25px 50px;
+    }
+    section #about .title{
+        font-size: 20px;
+    }
+    section #about .intro{
+        flex-direction: column;
+        padding: 15px;
+        gap: 25px;
+    }
+    section #about .intro img{
+        width: 250px;
+        height: 200px;
+    }
+    section #about .intro p{
+        font-size: 18px;
+    }
+    section #about .list-hobby{
+        grid-template-columns: repeat(1,300px);
+        gap: 18px;
+        padding: 20px;
+    }
+    section #about .list-hobby [class*="hobby-"]{
+        padding: 10px;
+    }
+    section #about .list-hobby [class*="hobby-"] .part-hobby img{
+        width: 150px;
+        height: 200px;
+    }
+    section #about .list-hobby [class*="hobby-"] .part-hobby .text{
+        font-size: 16px;
+    }
+    section #contact{
+        padding: 25px 50px;
+    }
+    section #contact .contact{
+        padding: 10px;
+    }
+    section #contact .contact h3{
+        font-size: 24px;
+    }
+    section #contact .contact .img-contact{
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    section #contact .contact .img-contact .list-contact ul li{
+        gap: 10px;
+    }
+    section #contact .contact .img-contact .list-contact ul li img{
+        width: 24px;
+    }
+    section #contact .contact .img-contact .image img{
+        height: 250px;
+    }
+    footer ul{
+        gap: 10px;
+    }
+    footer img{
+        width: 25px;
+    }
+    footer p{
+        font-size: 14px;
+    }
+}
