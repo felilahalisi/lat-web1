@@ -1,0 +1,29 @@
+body{
+    background-color: rgba(224, 200, 208, 0.904);
+}
+img{
+    width: 500px;
+    transition: width 2s, height 2s, transform2s ;
+}
+img:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);    
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36px;
+    text-align:center;
+}
+.p1{
+    text-align: center;
+}
+.p2{
+    text-align: center;
+}
+
